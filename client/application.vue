@@ -11,7 +11,7 @@
         class="navbar"
       >
         <b-navbar-brand href="#">
-          RMME Viewer
+          StatsView
         </b-navbar-brand>
         <b-collapse
           id="nav-collapse"
@@ -32,9 +32,9 @@
               </div>
             </label>
           </b-nav-form>
-          <b-navbar-nav>
-            <span style="margin-right: 1rem; margin-left: 1rem">
-              <b>Active file:</b> {{ files[activeFileIndex]["label"] }}
+          <b-navbar-nav class="navbar-text">
+            <span style="margin-right: 1rem; margin-left: 1rem" >
+              {{ files[activeFileIndex]["label"] }}
             </span>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
@@ -382,8 +382,10 @@
     cursor: pointer;
   }
 
-  .active {
+  .xactive {
     background-color: lightblue;
   }
+  .btn { color: white; }
+  .btn:hover { color: rgba(255,255,255,0.7); }
 
 </style>

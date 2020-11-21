@@ -39,7 +39,7 @@ export function selectVariant(status) {
             return "danger";
         case STATUS_OK:
         default:
-            return "info";
+            return "success";
     }
 }
 
@@ -48,13 +48,13 @@ export function selectColor(status){
         case undefined:
             return "black";
         case STATUS_WARNING:
-            return "#d4d208";
+            return "#f0ad4e";
         case STATUS_INVALID:
-            return "Red";
+            return "#d9534f";
         case STATUS_NONE:
             return "White";
         case STATUS_OK:
         default:
-            return "LimeGreen";
+            return "#5cb85c";
     }
 }

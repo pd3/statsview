@@ -20,7 +20,7 @@
       {{ item.label }}
       <b-button
         pill
-        variant="danger"
+        style="background-color:#d9534f;border-color:#d9534f"
         @click.stop="onDelete(index)"
       >
         <font-awesome-icon icon="trash" />
@@ -63,5 +63,12 @@
 .stayOnLine{
   white-space: nowrap;
 }
+
+/*
+.list-group-item-warning {
+    color: #f0ad4e !important;
+    background-color: #FCF8E3 !important;
+}
+*/
 
 </style>
